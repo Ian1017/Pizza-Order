@@ -26,8 +26,7 @@ function PizzaSizePrice(small,large,family) {
 	this.large = large;
 	this.family = family;
 }
-
-/Create an instance of the size price
+//Create an instance of the size price
 let myPizzaSizePrice = new PizzaSizePrice(8,10,13);
 
 //Create a method for final price
