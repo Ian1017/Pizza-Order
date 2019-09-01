@@ -1,0 +1,27 @@
+body{
+  font-family: 'Patrick Hand', cursive;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*.margharita:hover {*/
+/*    cursor: pointer;*/
+
+/*}*/
+
+
+#size-price,
+#toppings-price {
+    display: none;
+}
+
+
+#toppings {
+    border: 2px black;
+}
+
+#viewArea {
+    border: 6px;
+}
