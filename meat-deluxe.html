@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/mdb.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<title>Meat-Deluxe Pizza</title>
+</head>
+<body>
+<!--Card decks for 1st 3 pizzas-------------------------------------------------------------------->
+	<div class="card-deck">
+		<!--Card-->
+		<div class="card mb-4 col-sm border-0">
+				<img class="card-img-left width:100%" src="images/margharita.jpg" alt="Margharita Pizza">
+
+			<!--Card image-->
+	<!--		<div class="view overlay img-fluid width:100%">-->
+	<!--		</div>-->
+	<!--		&lt;!&ndash;Card content&ndash;&gt;-->
+	<!--		<div class="card-body">-->
+	<!--			-->
+	<!--			&lt;!&ndash;Title&ndash;&gt;-->
+	<!--			<h4 class="card-title">Margharita Pizza</h4>-->
+	<!--			-->
+	<!--			&lt;!&ndash;Text&ndash;&gt;-->
+	<!--			&lt;!&ndash;Make entire card clickable&ndash;&gt;-->
+	<!--			<a href="margharita.html" class="btn btn-primary stretched-link">-->
+	<!--				<div class="rgba-black-light">Order Margharita</div>-->
+	<!--			</a>--><!--		-->
+	<!--		</div>-->
+		</div>
+    <!--Card------------------------------------------------------------------>
+		<div class="card mb-4 col-sm border-0">
+
+			<div class="card-body">
+
+				<!--Title-->
+				<h2 class="card-title">How would you like your Meat-Deluxe Pizza</h2>
+
+				<!--Form-->
+				<form id="viewArea">
+					<div>
+            <h4>Pick your Pizza size</h4>
+          <div id="sizes" class="btn-group btn-group-toggle" data-toggle="buttons">
+
+            <label id="small-label" class="btn btn-light form-check-label">
+              <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" value="9">
+              Small - 11"
+            </label>
+
+            <label id="large-label" class="btn btn-light form-check-label">
+              <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off" value="11">
+              Large - 14"
+            </label>
+            <label id="family-label" class="btn btn-light form-check-label">
+            								<input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off" value="13">
+            								Family - 18"
+            							</label>
+            						</div>
+            						<!-------------------------------Display size price---------------------------->
+            					</div>
+            					<div>
+            						<h4 id="size-price" class="p-2"></h4>
+            					</div>
+                      <!------------------------------------Toppings checkbox------------------------------------------------>
+                            <div id="toppings" class="form-group-row">
+                                <div class="form-check">
+                                    <h4>Extra Toppings</h4>
+                                      <input type="checkbox" class="form-check-input" id="cheese" value="2">
+                                        <label for="cheese" class="form-check-label">Extra Cheese ($2.00)</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="olive" value="2">
+                                    <label for="cheese" class="form-check-label">Black Olive ($2.00)</label>
+                                  </div>
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="mushroom" value="2">
+                                          <label for="cheese" class="form-check-label">Mushroom ($2.00)</label>
+                                      </div>
+                                          <div class="form-check">
+                                              <input type="checkbox" class="form-check-input" id="onion" value="2">
+                                                <label for="cheese" class="form-check-label">Onions ($2.00)</label>
+                                              </div>
+                                                <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="bacon" value="2">
+                                                    <label for="cheese" class="form-check-label">Bacon ($2.00)</label>
+                                                  </div>
+                                                    <div class="form-check">
+                                                      <input type="checkbox" class="form-check-input" id="turkey" value="2">
+                                                        <label for="cheese" class="form-check-label">Turkey Fillet ($2.00)</label>
+                                                    </div>
+                                                  </div>
+                                                    <div>
+                                                      <h4 id="toppings-price" class="p-2"></h4>
+                                                        <div>
+                                                          <h3 class="p-3">Final price</h3>
+                                                          <h4 id="final-price" class="p-2"></h4>
+                                                        </div>
+                                                        Would you like a delivery? <br>
+                                                        <br>
+                                                        <input type="radio" id="YES" name="delivery" value="yes">Yes<br>
+                                                          <input type="radio" id="NO" name="delivery" value="no">No<br>
+                                                          <input type="text" name="" value="" placeholder="Enter your location"  id="location" required>
+                                                            <br><br>
+                                                            <input type="submit" name="" value="order" class="bt btn-primary" id="second_button">
+
+                                                          </form>
+                                                      </form>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </body>
