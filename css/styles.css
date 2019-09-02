@@ -1,5 +1,9 @@
 body{
   font-family: 'Patrick Hand', cursive;
+  background-image: url('https://images.pexels.com/photos/3498/italian-pizza-restaurant-italy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 nav {
     display: flex;
