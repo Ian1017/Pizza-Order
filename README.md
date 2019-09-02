@@ -12,7 +12,7 @@ To start using this project use the following commands:
 - `cd moringa-school-projects`
 - `cd IP4`
 - `atom .`
--  `code .` [//]: #(for those who prefer to use Visual Studio Code as your text editor)
+-  `code .` (for those who prefer to use Visual Studio Code as your text editor)
 
 ##Technologies Used
 HTML
