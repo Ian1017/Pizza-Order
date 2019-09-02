@@ -225,26 +225,10 @@ $(function () {
 			totalToppings -= numTurkey;
 			console.log(numTurkey);
 			$("#toppings-price").show().text("Ksh" + totalToppings);
-
-			//Subtract from final price
-			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("Ksh" + finalPrice);
-			console.log(finalPrice);
-		}
+			}
 	});
 
-  // home delivery button
-$("button.deliver").click(function(){
-  $(".pizzatable").hide();
-  $(".choice h2").hide();
-  $(".delivery").slideDown(1000);
-  $("#addedprice").hide();
-  $("button.deliver").hide();
-  $("#pizzatotal").hide();
-  let deliveryamount= checkoutTotal+200;
-  console.log("You will pay sh. "+deliveryamount+" on delivery");
-  $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
-});
+
 	// Create an instance of the object pizza
 	// var myPizza = new Pizza(sizePrice,totalToppings);
 	//Display final pizza price

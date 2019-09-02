@@ -98,16 +98,22 @@
                                                         <div>
                                                           <h3 class="p-3">Final price</h3>
                                                           <h4 id="final-price" class="p-2"></h4>
+																													<br>
+																													<input type="submit" name="Make Order" value="order" class="bt btn-primary" id="second_button">
+
                                                         </div>
                                                         Would you like a delivery? <br>
                                                         <br>
-                                                        <input type="radio" id="YES" name="delivery" value="yes">Yes<br>
-                                                          <input type="radio" id="NO" name="delivery" value="no">No<br>
-                                                          <input type="text" name="" value="" placeholder="Enter your location"  id="location" required>
-                                                            <br><br>
-                                                            <input type="submit" name="" value="order" class="bt btn-primary" id="second_button">
-
-                                                          </form>
+																												<div class="delivery">
+																													<form action="">
+																														<div class="form-group">
+																														<input type="text" id="name" class="form-control mb-3" placeholder="Name">
+																														<input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+																														<input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+																														<button class="btn btn-outline-danger" id="final-order">Place Order</button>
+																												</div>
+																													</form>
+							
                                                       </form>
                                                     </div>
                                                   </div>
