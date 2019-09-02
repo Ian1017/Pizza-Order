@@ -18,7 +18,7 @@ function ToppingsPrices(cheese,onion,mushroom,olive,bacon,turkey) {
 }
 
 //instantiate the pricing object
-let myToppingsPrices = new ToppingsPrices(2,2,2,2,2, 2);
+let myToppingsPrices = new ToppingsPrices(200,200,200,200,200, 200);
 
 //Create pizza size prices
 function PizzaSizePrice(small,large,family) {
@@ -27,7 +27,7 @@ function PizzaSizePrice(small,large,family) {
 	this.family = family;
 }
 //Create an instance of the size price
-let myPizzaSizePrice = new PizzaSizePrice(9,11,13);
+let myPizzaSizePrice = new PizzaSizePrice(900,1100,1300);
 
 //Create a method for final price
 
@@ -50,10 +50,10 @@ $(function () {
 	$("input#option1").click(function () {
 		// $("#size-price").show();
 		// $("#size-price").toggle();
-		// let price = "$" + $("input#option1").val();
+		// let price = "Ksh" + Ksh("input#option1").val();
 		sizePrice = myPizzaSizePrice.small;
-		let displaySizePrice = "$" + sizePrice;
-		let displayFinalPrice = "$" + sizePrice;
+		let displaySizePrice = "Ksh" + sizePrice;
+		let displayFinalPrice = "Ksh" + sizePrice;
 		console.log(sizePrice);
 
 		//Display subtotal and final price
@@ -63,8 +63,8 @@ $(function () {
 	$("input#option2").click(function () {
 
 		sizePrice = myPizzaSizePrice.large;
-		let displaySizePrice = "$" + sizePrice;
-		let displayFinalPrice = "$" + sizePrice;
+		let displaySizePrice = "Ksh" + sizePrice;
+		let displayFinalPrice = "Ksh" + sizePrice;
 		console.log(sizePrice);
 
 		//Display subtotal and final price
@@ -76,8 +76,8 @@ $(function () {
 		// $("#size-price").show();
 
 		sizePrice = myPizzaSizePrice.family;
-		let displaySizePrice = "$" + sizePrice;
-		let displayFinalPrice = "$" + sizePrice;
+		let displaySizePrice = "Ksh" + sizePrice;
+		let displayFinalPrice = "Ksh" + sizePrice;
 		console.log(sizePrice);
 
 		//Display subtotal and final price
@@ -86,10 +86,10 @@ $(function () {
 
 	});
 	// blanks.forEach(function (blank) {
-	// 	let arr = parseInt($("#" + blank).val);
+	// 	let arr = parseInt(Ksh("#" + blank).val);
 	// 	console.log(arr);
 	// 	const totalToppings = arr => arr.reduce((a, b) => a + b, 0);
-	// 	$("#toppings-price").show().text("$" + totalToppings);
+	// 	$("#toppings-price").show().text("Ksh" + totalToppings);
 	// 	// console.log(totalToppings);
 	// });
 	// $("input#cheese").checkbox(function () {
@@ -100,19 +100,19 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numCheese;
 			console.log(numCheese);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numCheese;
 			console.log(numCheese);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
@@ -123,20 +123,20 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numOnion;
 			console.log(numOnion);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//add to final price
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numOnion;
 			console.log(numOnion);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
@@ -146,20 +146,20 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numMushroom;
 			console.log(numMushroom);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//add to final price
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numMushroom;
 			console.log(numMushroom);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
@@ -169,20 +169,20 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numOlive;
 			console.log(numOlive);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//add to final price
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numOlive;
 			console.log(numOlive);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
@@ -192,20 +192,20 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numBacon;
 			console.log(numBacon);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//add to final price
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numBacon;
 			console.log(numBacon);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
@@ -215,23 +215,36 @@ $(function () {
 		if (this.checked === true) {
 			totalToppings += numTurkey;
 			console.log(numTurkey);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//add to final price
 			finalPrice = sizePrice + totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		} else {
 			totalToppings -= numTurkey;
 			console.log(numTurkey);
-			$("#toppings-price").show().text("$" + totalToppings);
+			$("#toppings-price").show().text("Ksh" + totalToppings);
 
 			//Subtract from final price
 			finalPrice = sizePrice - totalToppings;
-			$("#final-price").text("$" + finalPrice);
+			$("#final-price").text("Ksh" + finalPrice);
 			console.log(finalPrice);
 		}
 	});
+
+  // home delivery button
+$("button.deliver").click(function(){
+  $(".pizzatable").hide();
+  $(".choice h2").hide();
+  $(".delivery").slideDown(1000);
+  $("#addedprice").hide();
+  $("button.deliver").hide();
+  $("#pizzatotal").hide();
+  let deliveryamount= checkoutTotal+200;
+  console.log("You will pay sh. "+deliveryamount+" on delivery");
+  $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+});
 	// Create an instance of the object pizza
 	// var myPizza = new Pizza(sizePrice,totalToppings);
 	//Display final pizza price
@@ -253,9 +266,9 @@ $(function () {
 		// $("#toppings-price").show().text("$" + totalToppings);
 	// });
 
-	// $("input#mozzarella").click(function () {
-	// 	let numMozzarella = parseInt($("#mozzarella").val());
-	// 	totalToppings += numMozzarella;
+	// $("input#onion").click(function () {
+	// 	let numOnion = parseInt($("#onion").val());
+	// 	totalToppings += numOnion;
 	// 	$("#toppings-price").show().text("$" + totalToppings);
 	// 	// $("#toppings-price").show().text("$" + totalToppings);
 	// });
@@ -264,9 +277,9 @@ $(function () {
 	// 	totalToppings += numMushroom;
 	// 	// $("#toppings-price").show().text("$" + totalToppings);
 	// });
-	// $("input#egg").click(function () {
-	// 	let numEgg = parseInt($("#egg").val());
-	// 	totalToppings += numEgg;
+	// $("input#olive").click(function () {
+	// 	let numOlive = parseInt($("#olive").val());
+	// 	totalToppings += numOlive;
 	// 	// $("#toppings-price").show().text("$" + totalToppings);
 	// });
 	// $("input#bacon").click(function () {
