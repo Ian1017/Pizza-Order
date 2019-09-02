@@ -15,19 +15,23 @@ To start using this project use the following commands:
 -  `code .` (for those who prefer to use Visual Studio Code as your text editor)
 
 ##Technologies Used
+
 HTML
 CSS
 Javascript
 
 ##known Bugs
+
 The delivery section is not yet functional.
 
 The system does not alert that someone has made a purchase.
 
 ##Support and contact details
-For any contribution or queries contact +254743209527
+
+For any contribution towards the project or queries contact +254743209527
 
 ##License info
+
 MIT License
 Permission is granted to anyone willing to copy or make any changes to the project.
 
