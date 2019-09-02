@@ -260,10 +260,10 @@ $("button.deliver").click(function(){
 		// 	totalToppings += numCheese;
 		// 	console.log(totalToppings);
 		// // }
-		// 	$("#toppings-price").show().text("$" + totalToppings);
+		// 	$("#toppings-price").show().text("checkMushroom" + totalToppings);
 		//
 
-		// $("#toppings-price").show().text("$" + totalToppings);
+		// $("#toppings-price").show().text("Ksh" + totalToppings);
 	// });
 
 	// $("input#onion").click(function () {
